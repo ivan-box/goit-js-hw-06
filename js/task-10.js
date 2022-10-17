@@ -18,6 +18,7 @@
 //     .padStart(6, 0)}`;
 // }
 // Створи функцію destroyBoxes(), яка очищає вміст div#boxes, у такий спосіб видаляючи всі створені елементи.
+// завуження ментора: при створенні квадратів має чиститись інпут
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
