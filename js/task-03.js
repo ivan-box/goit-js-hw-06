@@ -20,14 +20,17 @@ const images = [
   },
 ];
 
-let test1 = document.querySelector(".gallery");
-// console.log(test1);
-let test2 = images.reduce(
-  (total, item) =>
-    (total += `<li><img class ='img-item' src="${item.url}" alt="${item.alt}"></li>`),
-  ""
-);
-console.log(test2);
+let imagesList = document.querySelector(".gallery");
+console.log(imagesList);
+// images.append("li");
+// let test1 = document.querySelector(".gallery");
+// // console.log(test1);
+// let test2 = images.reduce(
+//   (total, item) =>
+//     (total += `<li><img class ='img-item' src="${item.url}" alt="${item.alt}"></li>`),
+//   ""
+// );
+// console.log(test2);
 
-// test2.classList.add("img-item");
-test1.insertAdjacentHTML("afterbegin", test2);
+// // test2.classList.add("img-item");
+// test1.insertAdjacentHTML("afterbegin", test2);
