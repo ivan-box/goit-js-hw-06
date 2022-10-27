@@ -13,6 +13,14 @@ const ingredients = [
   "Condiments",
 ];
 
+// const ingredientsList = document.querySelector("#ingredients");
+// let markup;
+// console.log(
+//   (markup = ingredientsList.append(
+//     ...ingredients.map((el) => (document.createElement("li").textContent = el))
+//   ))
+// );
+
 let test4 = document.querySelector("#ingredients");
 let arr = [];
 ingredients.map((elem) => {
@@ -23,4 +31,4 @@ ingredients.map((elem) => {
 });
 
 test4.append(...arr);
-console.log(test4);
+// console.log(test4);
