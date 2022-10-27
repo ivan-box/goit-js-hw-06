@@ -16,7 +16,7 @@
 let test = document.querySelectorAll(".item");
 console.log("Number of categories: " + test.length);
 
-// let test2 = document.querySelectorAll("ul>li.item>h2").textContent;
+// let test2 = document.querySelectorAll("ul>li.item>h2");
 // console.log(test2);
 test.forEach((elem) => {
   let title = elem.firstElementChild.textContent;
@@ -24,3 +24,17 @@ test.forEach((elem) => {
   console.log("Category: " + title);
   console.log("Elements: " + list.length);
 });
+
+// let test = document.querySelectorAll(".item");
+// let test2 = document.querySelectorAll(".item>h2");
+// console.log("Number of categories:", test.length);
+// console.log(test2);
+
+// Category: Animals
+// Elements: 4
+
+// Category: Products
+// Elements: 3
+
+// Category: Technologies
+// Elements: 5);
