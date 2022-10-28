@@ -22,6 +22,17 @@ const images = [
 
 let imagesList = document.querySelector(".gallery");
 console.log(imagesList);
+let arr = [];
+console.log(
+  imagesList.insertAdjacentHTML(
+    "afterbegin",
+    images.reduce(
+      (total, el) =>
+        (total += `<li><img class ='img-item' src="${el.url}" alt="${el.alt}"></li>`),
+      ""
+    )
+  )
+);
 // images.append("li");
 // let test1 = document.querySelector(".gallery");
 // // console.log(test1);
