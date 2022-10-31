@@ -22,8 +22,8 @@
 //   border-color: #f44336;
 // }
 
-let addBlur = document.querySelector("#validation-input");
-let addDataLength = addBlur.getAttribute("data-length");
+// let addBlur = document.querySelector("#validation-input");
+// let addDataLength = addBlur.getAttribute("data-length");
 
 addBlur.onblur = () => {
   if (addBlur.value.length === +addDataLength) {
