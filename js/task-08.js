@@ -21,22 +21,22 @@
 // зауваження метнора: при введені чогось одного (емайл пароль) випригує нотіфікашка що треба заповнити всі данні, при чому коли тисну ок, те що вже ввів стерлось (
 // бажано такого не робити, а то доводиться ще раз вводити)
 
-// let formLogin = document.querySelector(".login-form");
-// let formEmail = document.querySelector('[name="email"]');
-// let formPassword = document.querySelector('[name="password"]');
+let formLogin = document.querySelector(".login-form");
+let formEmail = document.querySelector('[name="email"]');
+let formPassword = document.querySelector('[name="password"]');
 
-// formLogin.addEventListener("submit", sendForm);
+formLogin.addEventListener("submit", sendForm);
 
-// function sendForm(event) {
-//   event.preventDefault();
-//   if (formEmail.value.trim() === "" || formPassword.value.trim() === "") {
-//     alert("Fill in the fields!");
-//   } else {
-//     const array = {
-//       mail: formEmail.value,
-//       password: formPassword.value,
-//     };
-//     console.log(array);
-//   }
-//   event.currentTarget.reset();
-// }
+function sendForm(event) {
+  event.preventDefault();
+  if (formEmail.value.trim() === "" || formPassword.value.trim() === "") {
+    alert("Fill in the fields!");
+  } else {
+    const array = {
+      mail: formEmail.value,
+      password: formPassword.value,
+    };
+    console.log(array);
+  }
+  event.currentTarget.reset();
+}
